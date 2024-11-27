@@ -1710,30 +1710,25 @@ h1 {
 }
 
 .download-btn {
-  position: fixed; /* Fija el botón en un lugar específico de la ventana */
-  bottom: 20px; /* Separación de la parte inferior */
-  right: 20px; /* Separación del lado derecho */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del texto */
+  position: absolute;
+  bottom: 10%; /* Mueve el botón al área inferior de la pantalla */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para que quede centrado */
+  z-index: 10; /* Asegura que esté por encima de las flores */
+  background-color: #6e2300; /* Color rojo del botón */
+  color: #fff; /* Texto blanco */
   border: none; /* Sin bordes */
-  border-radius: 5px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de la fuente */
-  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle relieve */
-  z-index: 1000; /* Asegura que quede encima de otros elementos */
-  text-transform: uppercase; /* Texto en mayúsculas */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño del texto */
+  font-family: 'Edu AU VIC WA NT Arrows', sans-serif; /* Fuente */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 .download-btn:hover {
-  background-color: #0056b3; /* Color más oscuro al pasar el cursor */
-  transition: background-color 0.3s ease; /* Animación suave */
+  background-color: #4d1200; /* Color más oscuro al pasar el mouse */
 }
 
-
-.download-btn:hover {
-  background-color: #0056b3; /* Color al pasar el mouse por encima */
-}
 
 
 /* Agregar más estilos según sea necesario */
