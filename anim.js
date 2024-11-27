@@ -38,3 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
     audio.play();
   });
 });
+
+document.getElementById("download-btn").addEventListener("click", function () {
+  // Ruta del archivo PDF
+  const pdfURL = "downloads/Armonia.pdf";
+
+  // 1. Descargar el archivo
+  const a = document.createElement("a");
+  a.href = pdfURL;
+  a.download = "Armonia.pdf"; // Nombre con el que se descargará
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+  // 2. Abrir el archivo en una nueva pestaña
+  setTimeout(() => {
+    window.open(pdfURL, "_blank");
+  }, 1000); // Espera un segundo para evitar conflictos entre descarga y apertura
+});

@@ -1703,6 +1703,27 @@ h1 {
   filter: blur(10vmin);
 }
 
+.download-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
 
 
 /* Agregar más estilos según sea necesario */
